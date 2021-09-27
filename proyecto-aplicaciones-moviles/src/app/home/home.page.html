@@ -1,11 +1,10 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      BG NEWS
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+      <ion-title>BG NEWS</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  
+<ion-content [fullscreen]="true">
+    <ion-button size="large" (click)="onLogout()">Logout</ion-button>
+    <ion-button size="large" routerLink="/admin">Admin</ion-button>
 </ion-content>
