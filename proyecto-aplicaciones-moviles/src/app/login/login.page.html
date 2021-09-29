@@ -1,10 +1,15 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Login</ion-title>
+    <ion-title>BG NEWS</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding color="tertiary">
+
+  <ion-card value="centrado">
+    <ion-card-header color="secondary"> 
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
     <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
       <ion-item>
         <ion-label>
@@ -39,8 +44,10 @@
       </ion-text>
     </ion-item>
     <ion-item-divider>
-      <ion-button size="larger" [disabled]="!(ionicForm.valid)" type="submit">Login</ion-button>
-      <ion-button size="larger" routerLink="/register">New</ion-button>
+      <ion-button  size="larger" [disabled]="!(ionicForm.valid)" type="submit" color="secondary">Iniciar Sesión</ion-button>
+      <ion-button  size="larger" routerLink="/register" color="secondary">Cuenta Nueva</ion-button>
     </ion-item-divider>
     </form>
+  </ion-card>
+  
 </ion-content>

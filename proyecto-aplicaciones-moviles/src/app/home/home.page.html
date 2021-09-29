@@ -1,10 +1,30 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>BG NEWS</ion-title>
+    <ion-toolbar color="primary">
+      <ion-title>HOME</ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-    <ion-button size="large" (click)="onLogout()">Logout</ion-button>
-    <ion-button size="large" routerLink="/admin">Admin</ion-button>
+<ion-content [fullscreen]="true" color="tertiary">
+<ion-col>
+  <ion-row>
+    <ion-card class="bienvenida">
+      <img src="https://i.ibb.co/JCWXR5G/LOGO.png" alt="">
+      <ion-card-header>
+        <ion-card-title>BIENVENIDOS</ion-card-title>
+        <ion-card-subtitle>BG News</ion-card-subtitle>
+      </ion-card-header>
+  
+      <ion-card-content>
+        Sea bienvenido a BG NEWS, donde nuestra priorida es mantenerlo al tanto de lo que pasa dia con dia.
+        Dentro de nuestro contenido puede encontrar noticias que le pueden parecen interesantes e indispensable,
+        ademas de información relacionada al COVID-19. Esperemos seamos de mucha ayuda para su dia a dia.
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-item-divider value="centrar" color="tertiary"> 
+        <ion-button size="larger" (click)="onLogout()" color="secondary">Cerrar Sesión</ion-button>
+        <ion-button size="larger" routerLink="/admin" color="secondary">Admin</ion-button>
+    </ion-item-divider>
+  </ion-row>
+</ion-col>
 </ion-content>

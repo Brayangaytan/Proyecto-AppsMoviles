@@ -1,10 +1,14 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Register</ion-title>
+    <ion-title>BG NEWS</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding color="tertiary">
+  <ion-card>
+    <ion-card-header color="secondary"> 
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
     <ion-item>
         <ion-label>
             Email
@@ -16,9 +20,10 @@
           Password
       </ion-label>
       <ion-input type="password" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
-  <ion-item-divider>
-      <ion-button size="larger" (click)="onRegister()">Registrar</ion-button>
-      <ion-button size="larger" routerLink="/login">Login</ion-button>
-  </ion-item-divider>
+    </ion-item>
+    <ion-item-divider>
+      <ion-button size="larger" (click)="onRegister()" color="secondary">Registrarse</ion-button>
+      <ion-button size="larger" routerLink="/login" color="secondary">Iniciar Sesión</ion-button>
+    </ion-item-divider>
+  </ion-card>
 </ion-content>
