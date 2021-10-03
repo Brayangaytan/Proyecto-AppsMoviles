@@ -17,8 +17,8 @@ const routes: Routes = [
         loadChildren: () => import('../noticias/noticias.module').then( m => m.NoticiasPageModule)
       },
       {
-        path: 'configuracion',
-        loadChildren: () => import('../configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
+        path: 'admin',
+    loadChildren: () => import('../admin/admin.module').then( m => m.AdminPageModule)
       },
       {
         path: 'covid',

@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Noticias Guardadas</ion-title>
+    <ion-button color="secondary" slot="start">
+      <ion-back-button routerLink="/tabs/guardado"></ion-back-button>
+    </ion-button>
+    <ion-title>Guardado Reciente</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,9 +22,6 @@
           Poder Ejecutivo en el estado.
         </ion-card-content>
 
-        <div class="ion-text-center ion-margin-vertical">
-          <ion-button size="larger" routerLink="/detalle-guardado" color="secondary">Ver Noticia Completa</ion-button>
-        </div>
       </ion-card>
     </ion-row>
   </ion-col>

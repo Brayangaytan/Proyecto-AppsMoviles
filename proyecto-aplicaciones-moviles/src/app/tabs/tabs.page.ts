@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfiguracionPage } from '../configuracion/configuracion.page';
+import { AdminPage } from '../admin/admin.page';
 import { CovidPage } from '../covid/covid.page';
 import { GuardadoPage } from '../guardado/guardado.page';
 import { HomePage } from '../home/home.page';
@@ -16,7 +16,7 @@ export class TabsPage implements OnInit {
   tab2: any = NoticiasPage;
   tab3: any = CovidPage;
   tab4: any = GuardadoPage;
-  tab5: any = ConfiguracionPage;
+  tab5: any = AdminPage;
   constructor(private navController: NavController, private navParams: NavParams) { }
 
   ngOnInit() {

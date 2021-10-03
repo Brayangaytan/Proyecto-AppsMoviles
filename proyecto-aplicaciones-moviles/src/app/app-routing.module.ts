@@ -42,6 +42,18 @@ const routes: Routes = [
   {
     path: 'admin', canActivate: [AuthGuard],
     loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
+    path: 'detalle-noticia', canActivate: [AuthGuard],
+    loadChildren: () => import('./detalle-noticia/detalle-noticia.module').then( m => m.DetalleNoticiaPageModule)
+  },
+  {
+    path: 'detalle-guardado', canActivate: [AuthGuard],
+    loadChildren: () => import('./detalle-guardado/detalle-guardado.module').then( m => m.DetalleGuardadoPageModule)
+  },
+  {
+    path: 'detalle-covid', canActivate: [AuthGuard],
+    loadChildren: () => import('./detalle-covid/detalle-covid.module').then( m => m.DetalleCovidPageModule)
   }
 ];
 

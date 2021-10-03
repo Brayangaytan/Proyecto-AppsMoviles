@@ -1,9 +1,11 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Noticias</ion-title>
+    <ion-button color="secondary" slot="start">
+      <ion-back-button routerLink="/tabs/noticias"></ion-back-button>
+    </ion-button>
+    <ion-title>Detalle Noticia</ion-title>
   </ion-toolbar>
 </ion-header>
-
 
 <ion-content [fullscreen]="true" color="tertiary">
   <ion-col>
@@ -21,9 +23,9 @@
         </ion-card-content>
 
         <div class="ion-text-center ion-margin-vertical">
-          <ion-button size="larger" routerLink="/detalle-noticia" color="secondary">Ver Noticia Completa</ion-button>
+          <ion-button size="larger"  color="secondary">Guardar Noticia</ion-button>
         </div>
       </ion-card>
     </ion-row>
   </ion-col>
-  </ion-content>
+</ion-content>
