@@ -13,7 +13,16 @@ const routes: Routes = [
   },
   {
     path: 'noticias', canActivate: [AuthGuard],
-    loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
+    children: [
+      {
+        path:'',
+        loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
+      },
+      {
+        path:':idNoticia',
+        loadChildren: () => import('./detalle-noticia/detalle-noticia.module').then( m => m.DetalleNoticiaPageModule)
+      }
+    ]
   },
   {
     path: 'configuracion', canActivate: [AuthGuard],

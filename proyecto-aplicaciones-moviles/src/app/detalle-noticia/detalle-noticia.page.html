@@ -10,21 +10,24 @@
 <ion-content [fullscreen]="true" color="tertiary">
   <ion-col>
     <ion-row>
+
       <ion-card class="centrar">
-        <img src="https://imagenes.milenio.com/O0pHg4foJRd-BgXzj4N-iFT1hQo=/958x596/https://www.milenio.com/uploads/media/2021/10/02/nevadas-chihuahua-originaron-entrada-frente_0_1_1200_746.jpeg" alt="">
+        <img src= {{noticia.imagen}} >
         <ion-card-header>
-          <ion-card-title>Prevén Primeras Nevadas en Chihuahua por Frente Frío Número 2</ion-card-title>
-          <ion-card-subtitle>Autor: Norma Ponce</ion-card-subtitle>
+          <ion-card-title> {{noticia.titulo}} </ion-card-title>
+          <ion-card-subtitle>Fecha: {{noticia.fecha}} </ion-card-subtitle>
+          <ion-card-subtitle>Autor: {{noticia.autor}}</ion-card-subtitle>
+          <ion-card-subtitle>Categoria: {{noticia.categoria}} </ion-card-subtitle>
         </ion-card-header>
     
         <ion-card-content>
-          La Coordinación Estatal de Protección Civil de Chihuahua emitió un aviso preventivo por lluvias, 
-          bajas temperaturas y nevadas sobre la zona serrana, que se presentarán hoy y mañana.
+          {{noticia.info}}
         </ion-card-content>
 
         <div class="ion-text-center ion-margin-vertical">
           <ion-button size="larger"  color="secondary">Guardar Noticia</ion-button>
         </div>
+
       </ion-card>
     </ion-row>
   </ion-col>
