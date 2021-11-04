@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-button color="secondary" slot="start">
+            <ion-back-button routerLink="/tabs/admin"></ion-back-button>
+      </ion-button>
+      <ion-title>Galeria BG News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="tertiary">
+  <ion-header collapse="condense">
+      <ion-toolbar>
+          <ion-title size="large">Photo Gallery</ion-title>
+      </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+      <ion-row>
+          <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+              <ion-img [src]="photo.webviewPath" (click)="showActionSheet(photo, position)"></ion-img>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button>
+          <ion-icon name="camera" (click)="photoService.addNewToGallery()"></ion-icon>
+      </ion-fab-button>
+  </ion-fab>
+</ion-content> 

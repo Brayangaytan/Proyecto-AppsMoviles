@@ -63,6 +63,10 @@ const routes: Routes = [
   {
     path: 'detalle-covid', canActivate: [AuthGuard],
     loadChildren: () => import('./detalle-covid/detalle-covid.module').then( m => m.DetalleCovidPageModule)
+  },
+  {
+    path: 'galeria', canActivate: [AuthGuard],
+    loadChildren: () => import('./galeria/galeria.module').then( m => m.GaleriaPageModule)
   }
 ];
 
