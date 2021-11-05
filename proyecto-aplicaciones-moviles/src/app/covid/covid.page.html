@@ -1,42 +1,49 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="danger">
     <ion-title>Covid</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="tertiary">
+
   <ion-col>
     <ion-row>
-      <ion-list >
+      <ion-card class="bienvenida">
+        <img src="https://www.betelgeux.es/blog/wp-content/uploads/2020/04/d-Covid19-estabililidad-e-inactivacion.jpg">
+        <ion-card-header>
+          <ion-card-title>CUIDATE DEL COVID-19</ion-card-title>
+          <ion-card-subtitle>BG News</ion-card-subtitle>
+        </ion-card-header>
+    
+        <ion-card-content>
+          La enfermedad por COVID‑19 es una enfermedad infecciosa provocada por el virus SARS-CoV-2.
+          La mayoría de las personas que padecen COVID‑19 sufren síntomas de intensidad leve a moderada y se 
+          recuperan sin necesidad de tratamientos especiales. Sin embargo, algunas personas desarrollan casos 
+          graves y necesitan atención médica.
+        </ion-card-content>
+      </ion-card>
 
-        <ion-col>
-          <ion-row>
-          <div class="centrar ion-margin-vertical">
-            <ion-item [routerLink]="['/detalle-covid']">Historial - Covid-19</ion-item>
-            <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/14A35/production/_115033548_gettyimages-1226314512.jpg" alt="">
-          </div>
-          </ion-row>
-        </ion-col>
-
-        <ion-col>
-          <ion-row>
-            <div class="centrar ion-margin-vertical">
-              <ion-item [routerLink]="['/detalle-covid']">Al Momento - Covid-19</ion-item>
-              <img src="https://ibero.mx/sites/default/files/prensaymultimedios/covid-900.jpg" alt="">
-            </div>
-          </ion-row>
-        </ion-col>
-
-        <ion-col>
-          <ion-row>
-            <div class="centrar ion-margin-vertical"> 
-              <ion-item [routerLink]="['/detalle-covid']">Vacunados - Covid-19</ion-item>
-              <img src="https://phantom-expansion.unidadeditorial.es/26f001eec6535e69b8e991eeb7bf90c7/crop/0x136/2045x1496/resize/414/f/jpg/assets/multimedia/imagenes/2021/08/17/16291528739094.jpg" alt="">
-            </div>
-          </ion-row>
-        </ion-col>
-
-      </ion-list>
+      <ion-card class="bienvenida">
+        <img src="https://statics-cuidateplus.marca.com/cms/sars-cov-2.jpg">
+        <ion-card-header>
+          <ion-card-title>PROPAGACIÓN</ion-card-title>
+          <ion-card-subtitle>BG News</ion-card-subtitle>
+        </ion-card-header>
+    
+        <ion-card-content>          
+          El virus puede propagarse desde la boca o la nariz de una persona infectada en forma de pequeñas 
+          partículas líquidas que expulsa cuando tose, estornuda, habla, canta o respira. 
+          Estas partículas pueden ser desde pequeños aerosoles hasta gotitas respiratorias más grandes.
+          Puedes contagiarte de COVID‑19 si respiras cerca de una persona infectada o si tocas una superficie 
+          contaminada y, seguidamente, te tocas los ojos, la nariz o la boca. 
+          El virus se propaga más fácilmente en espacios interiores o en aglomeraciones de personas.
+        </ion-card-content>
+      </ion-card>
+    
+      <div class="ion-text-center ion-margin-vertical">
+        <ion-button size="larger" routerLink="/detalle-covid" color="danger">Información - Covid</ion-button>
+      </div>
     </ion-row>
   </ion-col>
+
 </ion-content>

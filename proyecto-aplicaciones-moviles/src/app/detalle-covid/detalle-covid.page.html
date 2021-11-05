@@ -1,21 +1,93 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-button color="secondary" slot="start">
+  <ion-toolbar color="danger">
+    <ion-button color="primary" slot="start">
       <ion-back-button routerLink="/tabs/covid"></ion-back-button>
     </ion-button>
     <ion-title>Covid-19 - Información</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> 
 
-<ion-content color="tertiary">
+<ion-content *ngIf="isLoading">
 
-  <ion-col>
-    <ion-row>
-    <div class="centrar ion-margin-vertical">
-      <img src="http://pngimg.com/uploads/attention/attention_PNG5.png" alt="">
-      <ion-item>PROXIMAMENTE - Información de Covid-19</ion-item>
-    </div>
-    </ion-row>
-  </ion-col>
+  <ion-item>
+    <ion-title>
+      Casos
+    </ion-title>
+    <ion-text>
+      {{covid.cases}}
+    </ion-text>
+  </ion-item>
 
+  
+  <ion-item>
+    <ion-title>
+      Casos de hoy
+    </ion-title>
+    <ion-text>
+      {{covid.todayCases}}
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-title>
+      Muertes
+    </ion-title>
+    <ion-text>
+      {{covid.deaths}}
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-title>
+      Recuperados
+    </ion-title>
+    <ion-text>
+      {{covid.recovered}}
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-title>
+      Recuperaos hoy
+    </ion-title>
+    <ion-text>
+      {{covid.todayRecovered}}
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-title>
+      Activos
+    </ion-title>
+    <ion-text>
+      {{covid.active}}
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-title>
+      En Estado Critico
+    </ion-title>
+    <ion-text>
+      {{covid.critical}}
+    </ion-text>
+  </ion-item>
+
+   <ion-item>
+    <ion-title>
+      Pruebas de Covid
+    </ion-title>
+    <ion-text>
+      {{covid.tests}}
+    </ion-text>
+  </ion-item>
+  
+  <ion-item>
+    <ion-title>
+    Países Afectaos
+    </ion-title>
+    <ion-text>
+      {{covid.affectedCountries}}
+    </ion-text>
+  </ion-item>
 </ion-content>
