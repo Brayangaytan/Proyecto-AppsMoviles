@@ -5,13 +5,40 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="tertiary">
-  
-    <ion-button size="larger" routerLink="/tabs/home">HOME</ion-button>
 
-    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-      <ion-fab-button>
-          <ion-icon name="image-outline" routerLink="/galeria" ></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+  <ion-col>
+    <ion-row>
+
+      <ion-card>
+
+        <img src="https://i.ibb.co/sq4PHvR/245542780-440863067400875-7566676395321030762-n-1.jpg" >
+        <ion-card-header>
+          <ion-card-title>Brayan Gaytán</ion-card-title>
+          <ion-card-subtitle>19 Años</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+
+          <ion-item>
+
+            <ion-title>
+              Ocupación:
+            </ion-title>
+            <ion-text>
+              Estudiantes
+            </ion-text>
+
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+
+        <ion-button size="larger" routerLink="/tabs/home">HOME</ion-button>
+
+        <ion-button size="larger" routerLink="/galeria">Galeria</ion-button>
+
+    </ion-row>
+  </ion-col>
 
 </ion-content>
